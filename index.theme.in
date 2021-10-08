@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=postmarketOS @variant@
+Comment=Gnome themes adjusted for postmarketOS
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=postmarketos-@variant@
+IconTheme=Tango
+MetacityTheme=postmarketos-@variant@
+ButtonLayout=:minimize,maximize,close
