@@ -21,4 +21,6 @@ foreach variant: theme_variants
       variant_target.full_path(),
       dest_theme_dir / 'gtk-4.0' / 'gtk.css'
       )
+  install_subdir('assets',
+    install_dir: dest_theme_dir / 'gtk-4.0')
 endforeach
