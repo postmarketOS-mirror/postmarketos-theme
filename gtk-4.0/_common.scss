@@ -1440,6 +1440,13 @@ headerbar {
 
   @include headerbar_fill(darken($bg_color, 10%));
 
+  @if $contrast == 'high' {
+    background: $bg_color;
+    box-shadow: none;
+    border: none;
+  }
+
+
   &:backdrop {
     border-color: $backdrop_borders_color;
     background-color: $bg_color;

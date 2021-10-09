@@ -77,7 +77,8 @@ $dim_label_opacity: 0.55;
 @if $contrast == 'high' {
 
   $fg_color: if($variant == 'light', darken($fg_color, 3%), lighten($fg_color, 2%));
-  $bg_color: #000;
+  $bg_color: if($variant == 'light', #fff, #000);
+  $base_color: if($variant == 'light', #fff, #000);
   $selected_bg_color: darken($selected_bg_color,10%);
   $selected_borders_color: darken($selected_borders_color, 10%);
   $borders_color: if($variant == 'light', darken($borders_color, 30%), lighten($borders_color, 30%));
