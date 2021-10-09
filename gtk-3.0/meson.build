@@ -3,6 +3,12 @@ scss_files = files([
   '_colors.scss',
   '_common.scss',
   '_drawing.scss',
+  '_phosh.scss',
+  '_handy.scss',
+  'handy/_Adwaita-base.scss',
+  'handy/_definitions.scss',
+  'handy/_fallback-base.scss',
+  'handy/_shared-base.scss',
 ])
 
 foreach variant: theme_variants

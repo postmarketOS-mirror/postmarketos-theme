@@ -1,0 +1,40 @@
+$phosh_topbar_bg: black;
+$phosh_topbar_fg: white;
+$phosh_bottombar_bg: black;
+$phosh_bottombar_fg: white;
+$phosh_quicksetting_bg: black;
+
+@if $contrast == 'high' {
+  $phosh_topbar_bg: if($variant == 'light', #fff, #000);
+  $phosh_topbar_fg: if($variant == 'light', #000, #fff);
+  $phosh_bottombar_bg: if($variant == 'light', #fff, #000);
+  $phosh_bottombar_fg: if($variant == 'light', #000, #fff);
+  $phosh_quicksetting_bg: if($variant == 'light', #fff, #000);
+}
+
+/* Phosh style overrides */
+.phosh-settings-menu * {
+  /* The opened part of the top menu */
+  background: $phosh_topbar_bg !important;
+  border: none !important;
+  color: $phosh_topbar_fg !important;
+}
+
+phosh-home {
+  background: $phosh_bottombar_bg !important;
+  border: none !important;
+  color: $phosh_bottombar_fg !important;
+}
+
+.phosh-quick-setting {
+  background: $phosh_quicksetting_bg !important;
+}
+
+phosh-lockscreen {
+  background: $phosh_bottombar_bg !important;
+  color: $phosh_bottombar_fg !important;
+}
+
+.phosh-panel-btn {
+  border-width: 0 !important;
+}

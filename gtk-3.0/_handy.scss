@@ -1,0 +1,6 @@
+$high_contrast: false;
+@if $contrast == 'high' {
+  $high_contrast: true;
+}
+
+@import "handy/Adwaita-base";
