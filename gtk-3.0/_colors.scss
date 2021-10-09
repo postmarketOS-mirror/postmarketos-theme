@@ -79,6 +79,10 @@ $checkradio_borders_color: if($variant == 'light', darken($checkradio_bg_color,2
 // High Contrast color overrides
 @if $contrast == 'high' {
   $bg_color: #000;
+  $base_color: #000;
   $insensitive_bg_color: #000;
-  $borders_color: lighten($bg_color, 10%);
+  $borders_color: lighten($bg_color, 20%);
+  $alt_borders_color: lighten($bg_color, 20%);
+  $button_bg: lighten($bg_color, 20%);
+  $button_border: lighten($button_bg, 5%);
 }
