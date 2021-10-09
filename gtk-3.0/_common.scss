@@ -1578,7 +1578,7 @@ headerbar {
   @include headerbar_fill(darken($bg_color, 10%));
 
   @if $contrast == 'high' {
-    background: black;
+    background: $bg_color;
     box-shadow: none;
     border: none;
   }
@@ -3829,7 +3829,11 @@ scrolledwindow {
 
 //vbox and hbox separators
 separator {
-  background: transparentize(black, 0.9);
+  @if $contrast == 'high' {
+    background: $borders_color;
+  } @else {
+    background: transparentize(black, 0.9);
+  }
   min-width: 1px;
   min-height: 1px;
 }

@@ -4,6 +4,7 @@ theme_variants = [
   'light',
   'dark',
   'oled',
+  'paper',
 ]
 
 sassc = find_program('sassc', required: true)
