@@ -200,7 +200,7 @@
                                               linear-gradient(to top, darken($c,1%) 2px, $c)),
                       $backimage;
     @if $contrast == 'high' {
-      background: #333;
+      border: 1px solid #333;
     } @else {
       @include _button_text_shadow($tc, $c);
       @include _shadows(inset 0 1px $_hilight_color, $_button_edge, $_button_shadow);
@@ -242,7 +242,7 @@
        @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),
                         $_button_edge, $_button_shadow);
     } @else if $contrast == 'high' {
-      background: #333;
+      background-color: #333;
     }
     @else {
       background-image: linear-gradient(to bottom, darken($c, 3%) 20%, darken($c, 6%) 90%);
